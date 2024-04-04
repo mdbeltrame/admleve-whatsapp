@@ -3,9 +3,9 @@ const mysql = require('mysql');
 // Função para conectar ao banco de dados e inserir mensagem
 function inserirMensagem(mensagem) {
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
+        host: 'jdbc:mysql://admdbinstance.chpvtwrtyeie.us-west-2.rds.amazonaws.com:3306/admwhatsapp?useSSL=false',
+        user: 'admdb',
+        password: 'f0rmulario',
         database: 'admleve_whatsapp'
     });
 

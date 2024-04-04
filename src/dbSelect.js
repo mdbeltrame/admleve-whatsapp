@@ -5,9 +5,9 @@ const mysql = require('mysql');
 function buscarMensagem(empresa, tenant) {
     return new Promise((resolve, reject) => {
         const connection = mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: 'root',
+            host: 'jdbc:mysql://admdbinstance.chpvtwrtyeie.us-west-2.rds.amazonaws.com:3306/admwhatsapp?useSSL=false',
+            user: 'admdb',
+            password: 'f0rmulario',
             database: 'admleve_whatsapp'
         });
 
