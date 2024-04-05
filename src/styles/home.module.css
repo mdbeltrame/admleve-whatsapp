@@ -1,0 +1,75 @@
+/* home.module.css */
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.endpointContainer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.endpointTitle {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.methodGet {
+  background-color: #40a803;
+  border: 2px solid rgb(255, 255, 255);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.endpointDescription {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.tableHeader {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+}
+
+.tableCell {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.allowedMethods {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.responseTitle {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.response {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+}
