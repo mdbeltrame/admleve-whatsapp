@@ -39,11 +39,8 @@ export default function Home() {
             "codigo": 1,
             "numeros": "(49) 99809-1949;(49) 99809-1949",
             "mensagem": "Pedido Número 10",
-            "pdf": {
-              "type": "Buffer",
-              "data": [byte]
-            },
-            "url_amazon_xml": "www.amazon.com.br/s3/xml"
+            "pdf": "Pedido200176mzgw.pdf",
+            "url_amazon_xml": "NFCe42220841004130000180650010000000061000000079"
         }
     ]
 }`}
