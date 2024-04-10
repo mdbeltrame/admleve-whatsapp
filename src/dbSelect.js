@@ -29,25 +29,23 @@ function buscarMensagem(empresa, tenant) {
                     return;
                 }
                 //UPDATE QUANDO PEGA AS INFORMACOES
-               // result.forEach((row) => {
-                    // Aqui você pode fazer o UPDATE usando os dados de cada linha (row) do SELECT
-                  //  const updateSQL = 'UPDATE mensagens SET enviado = ? WHERE codigo = ?';
-                   // const coluna1NovoValor = true;
-                                    
-                   // connection.query(updateSQL, [coluna1NovoValor, row.codigo], (error, results) => {
-                   //   if (error) {
-                   //     console.error('Erro ao executar o UPDATE:', error);
-                   //     return;
-                   //   }
-                    //  console.log('UPDATE executado com sucesso para a linha com ID:', row.codigo);
-                  //  });
-                 // });
+                result.forEach((row) => {
+                    const updateSQL = 'UPDATE mensagens SET enviado = ? WHERE codigo = ?';
+                    const coluna1NovoValor = true;  
+                    connection.query(updateSQL, [coluna1NovoValor, row.codigo], (error, results) => {
+                      if (error) {
+                        console.error('Erro ao executar o UPDATE:', error);
+                        return;
+                      }
+                      console.log('UPDATE executado com sucesso para a linha com ID:', row.codigo);
+                    });
+                  });
 
 
 
 
 
-                //console.log('Mensagens encontradas:', result);
+                console.log('Mensagens encontradas:', result);
                 
                 // Encerrar a conexão
                 connection.end();
