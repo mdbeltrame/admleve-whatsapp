@@ -39,7 +39,7 @@ export default function Home() {
             "codigo": 1,
             "numeros": "(49) 99809-1949;(49) 99809-1949",
             "mensagem": "Pedido Número 10",
-            "pdf": "Pedido200176mzgw.pdf",
+            "url_amazon_pdf": "Pedido200176mzgw.pdf",
             "url_amazon_xml": "NFCe42220841004130000180650010000000061000000079"
         }
     ]
