@@ -18,7 +18,7 @@ function inserirMensagem(mensagem) {
         }
         console.log('Conexão bem-sucedida ao banco de dados!');
                     
-        const sql = 'INSERT INTO mensagens (numeros, mensagem,url_amazon_pdf,url_amazon_xml,enviado,empresa,tenant) VALUES (?, ?, ?, ?, ?, ?, ?)';
+        const sql = 'INSERT INTO mensagens (numeros, mensagem,url_amazon_documento,url_amazon_xml,enviado,empresa,tenant) VALUES (?, ?, ?, ?, ?, ?, ?)';
         connection.query(sql, [mensagem.numeros, mensagem.mensagem,mensagem.pdf, mensagem.xml, mensagem.enviado, mensagem.empresa, mensagem.tenant], (err, result) => {
             if (err) {
                 console.error('Erro ao inserir mensagem:', err);

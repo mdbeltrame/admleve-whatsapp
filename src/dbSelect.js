@@ -21,7 +21,7 @@ function buscarMensagem(empresa, tenant) {
             }
             console.log('Conexão bem-sucedida ao banco de dados!');
                         
-            const sql = 'SELECT * FROM mensagens WHERE enviado = false AND empresa = ? AND tenant = ?';
+            const sql = 'SELECT codigo,numeros,mensagem,url_amazon_documento,url_amazon_xml FROM mensagens WHERE enviado = false AND empresa = ? AND tenant = ?';
             connection.query(sql, [empresa, tenant], (err, result) => { 
                 if (err) {
                     console.error('Erro ao buscar mensagens:', err);
@@ -41,11 +41,7 @@ function buscarMensagem(empresa, tenant) {
                     });
                   });
 
-
-
-
-
-                console.log('Mensagens encontradas:', result);
+                //console.log('Mensagens encontradas:', result);
                 
                 // Encerrar a conexão
                 connection.end();
