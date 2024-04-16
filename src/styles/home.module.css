@@ -73,3 +73,10 @@
   border: 1px solid #ddd;
   white-space: pre-wrap;
 }
+
+.logoSmall {
+  width: 700px;
+  margin-top: 20px !important;
+  display: block;
+  margin: 0 auto;
+}

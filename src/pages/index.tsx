@@ -1,5 +1,6 @@
 
 import styles from '../styles/home.module.css';
+import Logo from '../image/Logo.png';
 
 export default function Home() {
   return (
@@ -47,10 +48,11 @@ export default function Home() {
                 </pre>
             </div>
 
-            {/* Add more endpoints as needed */}
 
+            {/* Add more endpoints as needed */}
+            <img src={Logo.src} alt="Logo" className={`${styles.logo} ${styles.logoSmall}`} />
         </div>
-      
+     
     
   );
 }
